@@ -51,12 +51,12 @@ function startGame() {
         // Front of card (shows emoji)
         const cardFront = document.createElement('div');
         cardFront.className = 'card-front';
-        cardFront.textContent = cardValues[i];
+        cardFront.textContent = '❓'; // Show question mark on front
 
-        // Back of card (hidden side)
+        // Back of card (shows emoji)
         const cardBack = document.createElement('div');
         cardBack.className = 'card-back';
-        cardBack.textContent = '❓';
+        cardBack.textContent = cardValues[i]; // Show emoji on back
 
         // Build card structure
         cardInner.appendChild(cardFront);
